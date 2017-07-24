@@ -1,0 +1,325 @@
+{
+  "variables": [],
+  "info": {
+    "name": "book",
+    "_postman_id": "9eea8789-d8aa-fbf2-3bfa-e2fd6c988c15",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "登录",
+      "request": {
+        "url": "http://127.0.0.1:1237/user/login",
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "username",
+              "value": "tt",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "123",
+              "type": "text"
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": {"result": {"message": "登录成功", "code": 0}}
+    },
+    {
+      "name": "登出",
+      "request": {
+        "url": "http://127.0.0.1:1237/user/logout",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": {"result": {"message": "登出成功", "code": 0}}
+    },
+    {
+      "name": "注册",
+      "request": {
+        "url": "http://127.0.0.1:1237/user/register",
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "username",
+              "value": "tt",
+              "type": "text"
+            },
+            {
+              "key": "email",
+              "value": "tt@example.com",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "123",
+              "type": "text"
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "用户信息",
+      "request": {
+        "url": "http://127.0.0.1:1237/user/info",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": "这是用户信息"
+    },
+    {
+      "name": "借的书",
+      "request": {
+        "url": "http://127.0.0.1:1237/api/books?borrow=true",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "读过的书",
+      "request": {
+        "url": "http://127.0.0.1:1237/api/books?read=true",
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "username",
+              "value": "tt",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "123",
+              "type": "text"
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "读书",
+      "request": {
+        "url": "http://127.0.0.1:1237/api/read/3",
+        "method": "POST",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "借书",
+      "request": {
+        "url": "http://127.0.0.1:1237/api/borrow/3",
+        "method": "POST",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "还书",
+      "request": {
+        "url": "http://127.0.0.1:1237/api/return/3",
+        "method": "POST",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "所有书",
+      "request": {
+        "url": "http://127.0.0.1:1237/books/",
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "value": "",
+              "type": "file"
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "某本书",
+      "request": {
+        "url": "http://127.0.0.1:1237/api/books/2",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "看过某本书的人",
+      "request": {
+        "url": "http://127.0.0.1:1237/api/admin/books/2/readers",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "添加书",
+      "request": {
+        "url": "http://127.0.0.1:1237/books/add",
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "name",
+              "value": "123",
+              "type": "text"
+            },
+            {
+              "key": "author",
+              "value": "123",
+              "type": "text"
+            },
+            {
+              "key": "publisher",
+              "value": "123",
+              "type": "text"
+            },
+            {
+              "key": "category",
+              "value": "123",
+              "type": "text"
+            },
+            {
+              "key": "price",
+              "value": "123",
+              "type": "text"
+            },
+            {
+              "key": "page",
+              "value": "123",
+              "type": "text"
+            },
+            {
+              "key": "description",
+              "value": "123",
+              "type": "text"
+            },
+            {
+              "key": "ISBN",
+              "value": "123",
+              "type": "text"
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "修改书",
+      "request": {
+        "url": "http://127.0.0.1:1237/books/",
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "id",
+              "value": "30",
+              "type": "text"
+            },
+            {
+              "key": "name",
+              "value": "更新测试",
+              "type": "text"
+            },
+            {
+              "key": "author",
+              "value": "123",
+              "type": "text"
+            },
+            {
+              "key": "publisher",
+              "value": "123",
+              "type": "text"
+            },
+            {
+              "key": "category",
+              "value": "1",
+              "type": "text"
+            },
+            {
+              "key": "price",
+              "value": "123",
+              "type": "text"
+            },
+            {
+              "key": "page",
+              "value": "321",
+              "type": "text"
+            },
+            {
+              "key": "description",
+              "value": "123 拉拉阿拉",
+              "type": "text"
+            },
+            {
+              "key": "isbn",
+              "value": "123",
+              "type": "text"
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "删除书",
+      "request": {
+        "url": "http://127.0.0.1:1237/books/1",
+        "method": "DELETE",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    }
+  ]
+}
