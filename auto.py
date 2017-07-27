@@ -22,7 +22,7 @@ class RouteHandler(BaseHTTPRequestHandler):
             self.send_error(404, "File not found.")
             return
         self.send_response(200)
-        self.send_header('Content-type', 'text/plain')
+        self.send_header('Content-Type', 'text/plain; charset=utf-8')
         self.end_headers()
         self.wfile.write(self.response.encode("utf-8"))
 
