@@ -83,6 +83,7 @@ def main():
         run(args.host, args.port, args.url, args.method, args.response)
     except KeyboardInterrupt as e:
         print u"结束运行"
+        exit(0)
 
 
 if __name__ == '__main__':
